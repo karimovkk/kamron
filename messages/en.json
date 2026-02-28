@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "categories": "Categories",
+    "about": "About"
+  },
+  "hero": {
+  "badge": "Frontend Developer Blog",
+  "title1": "Clean interfaces,",
+  "title2": "real experience",
+  "title3": "and continuous growth.",
+  "desc": "I share my frontend learning journey, work experience and real code examples through this blog.",
+  "primary": "Explore Articles",
+  "secondary": "About Me"
+},
+  "latest": {
+  "title": "Latest articles",
+  "desc": "Recent posts and practical experiments.",
+  "viewAll": "View all",
+  "read": "Read"
+},
+
+"purpose": {
+  "badge": "Personal platform",
+  "title": "What is this site for?",
+  "desc1": "karimov.dev is my personal frontend blog and a project that will gradually evolve into a full portfolio platform. Here I document the technologies I’m learning, share real code examples, and build a structured knowledge base for myself.",
+  "desc2": "The main goal of this site is to organize my experience, refine my development style, and eventually showcase real projects in the portfolio section. Every post focuses on practical value: a problem, a solution, and a clear takeaway.",
+  "desc3": "This platform also serves as a place where people can learn more about me, explore my work, and get in touch for collaboration opportunities. Over time, I will expand it with more articles, categories, and production-level projects.",
+  "cta1": "About me",
+  "cta2": "Read articles",
+  "cta3": "Contact",
+  "panelTitle": "site.map",
+  "term1": "purpose --summary",
+  "term1Out": "blog • portfolio • contact • learning log",
+  "term2": "stack --active",
+  "term2Out": "Next.js • TypeScript • Tailwind • next-intl",
+  "k1": "Focus",
+  "v1": "Practical",
+  "k2": "Style",
+  "v2": "Minimal",
+  "k3": "Goal",
+  "v3": "Portfolio"
+},
+"footer": {
+  "desc": "Personal platform where I share my frontend journey, practical experience and future portfolio projects.",
+  "telegramTitle": "Telegram Channel",
+  "telegramDesc": "Join the channel to receive new articles and updates first.",
+  "telegramButton": "Join Channel",
+  "navigation": "Navigation",
+  "home": "Home",
+  "blog": "Blog",
+  "about": "About",
+  "contact": "Contact",
+  "connect": "Connect",
+  "rights": "All rights reserved."
+},
+
+  "blog": {
+    "title": "Blog",
+    "desc": "Useful articles about Frontend, Next.js and TypeScript.",
+    "all": "All",
+    "read": "Read more",
+    "empty": "No posts found in this category.",
+    "note": "New articles are coming soon."
+  }
+  ,
+  "about": {
+    "badge": "About",
+    "name": "Karimov Kamron",
+    "heroTitle": "Frontend Developer",
+    "heroText": "I am a frontend developer currently studying at PDP Academy and close to graduation. I have been learning programming for more than two years and continue improving every day. I studied C++ at a beginner level which helped me build strong algorithmic thinking. My main focus now is web frontend — building clean, modern and responsive user interfaces. My goal is to work at a strong tech company. Working at companies like Google is one of my long-term ambitions.",
+    "buttons": {
+      "portfolio": "Portfolio",
+      "email": "Email",
+      "telegram": "Telegram"
+    },
+    "placeholder": {
+      "title": "Image Area",
+      "subtitle": "Image coming soon",
+      "desc": "Your personal photo will be added here."
+    },
+    "stats": {
+      "focus": "Frontend",
+      "learning": "PDP Academy",
+      "goal": "Big Tech"
+    },
+    "portfolioBlock": {
+      "title": "Portfolio",
+      "text": "Currently, there are no large real-world projects in my portfolio. A full case study project will be added soon."
+    },
+    "goalBlock": {
+      "title": "Goal",
+      "text": "I plan to start working as a junior frontend developer in a real company soon and gain hands-on experience."
+    }
+  }
+,
+  "categories": {
+    "title": "Toolbox",
+    "subtitle": "Core tools and workflow I use for frontend development.",
+    "groups": {
+      "ui": {
+        "title": "UI",
+        "desc": "Clean design, layout, and responsive approach."
+      },
+      "framework": {
+        "title": "Framework",
+        "desc": "Frontend architecture, routing, and component system."
+      },
+      "quality": {
+        "title": "Quality",
+        "desc": "Code quality, version control, and optimization."
+      }
+    },
+    "building": {
+      "title": "What I'm building now",
+      "desc": "Soon I’ll fill the portfolio section and add a real case study project."
+    },
+    "note": "This section will be updated regularly. Real projects are coming soon."
+  },
+  "tech": {
+    "title": "Technologies",
+    "subtitle": "Key frontend technologies and directions.",
+    "centerTop": "Blog",
+    "centerBottom": "Explore",
+    "items": {
+      "html": {
+        "title": "HTML",
+        "desc": "Semantic structure and the foundation of web pages."
+      },
+      "css": {
+        "title": "CSS",
+        "desc": "Layout, responsive design, and UI styling."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "desc": "The main language for web interactivity and logic."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "desc": "Type safety and scalable architecture for large projects."
+      },
+      "react": {
+        "title": "React",
+        "desc": "Component-based library for building modern UIs."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "desc": "Production-ready React framework with SSR/SSG."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "desc": "Utility-first styling for fast and consistent UI."
+      },
+      "sass": {
+        "title": "Sass",
+        "desc": "Extended CSS with better structure and organization."
+      }
+    }
+  }
+}

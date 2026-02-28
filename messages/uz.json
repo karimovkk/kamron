@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "blog": "Blog",
+    "categories": "Kategoriya",
+    "about": "Men haqimda"
+  },
+  "hero": {
+  "badge": "Frontend Developer Blog",
+  "title1": "Sof interfeys,",
+  "title2": "real tajriba",
+  "title3": "va uzluksiz rivojlanish.",
+  "desc": "Frontend sohasidagi o‘rganish jarayonim, ishlash tajribam va real kod misollarini shu blog orqali ulashaman.",
+  "primary": "Maqolalarni ko‘rish",
+  "secondary": "Men haqimda"
+},
+  "latest": {
+  "title": "So‘nggi maqolalar",
+  "desc": "Yaqindagi postlar va amaliy tajribalar.",
+  "viewAll": "Barchasini ko‘rish",
+  "read": "O‘qish"
+},
+"purpose": {
+  "badge": "Shaxsiy platforma",
+  "title": "Bu sayt nimaga kerak?",
+  "desc1": "karimov.dev — bu mening shaxsiy frontend blogim va vaqt o‘tishi bilan to‘liq portfolio platformaga aylanadigan loyiha. Bu yerda men o‘rganayotgan texnologiyalarimni tartibli tarzda yozib boraman, real kod misollarini ulashaman va o‘zim uchun kuchli knowledge-base yig‘aman.",
+  "desc2": "Saytning asosiy maqsadi: tajribalarimni tizimlashtirish, o‘z uslubimni shakllantirish va keyinchalik portfolio bo‘limida real loyihalarimni joylash. Har bir post amaliy bo‘lishi kerak: muammo, yechim va xulosa — qisqa, aniq, foydali.",
+  "desc3": "Shuningdek bu platforma men haqimda ko‘proq ma’lumot olish, men bilan bog‘lanish va hamkorlik takliflari uchun ham qulay. Vaqt o‘tishi bilan postlar soni, kategoriyalar, va real projectlar ko‘payib boradi.",
+  "cta1": "Men haqimda",
+  "cta2": "Postlarni o‘qish",
+  "cta3": "Bog‘lanish",
+  "panelTitle": "site.map",
+  "term1": "purpose --summary",
+  "term1Out": "blog • portfolio • contact • learning log",
+  "term2": "stack --active",
+  "term2Out": "Next.js • TypeScript • Tailwind • next-intl",
+  "k1": "Focus",
+  "v1": "Practical",
+  "k2": "Style",
+  "v2": "Minimal",
+  "k3": "Goal",
+  "v3": "Portfolio"
+},
+"footer": {
+  "desc": "Frontend rivojlanish yo‘lim, amaliy tajribalarim va kelajakdagi portfolio loyihalarim jamlangan shaxsiy platforma.",
+  "telegramTitle": "Telegram kanal",
+  "telegramDesc": "Yangi maqolalar va yangilanishlarni birinchi bo‘lib olish uchun kanalga qo‘shiling.",
+  "telegramButton": "Kanalga qo‘shilish",
+  "navigation": "Navigatsiya",
+  "home": "Bosh sahifa",
+  "blog": "Blog",
+  "about": "Men haqimda",
+  "contact": "Bog‘lanish",
+  "connect": "Bog‘lanish",
+  "rights": "Barcha huquqlar himoyalangan."
+},
+"blog": {
+  "title": "Blog",
+  "desc": "Frontend bo‘yicha qaydlar, amaliy tajribalar va o‘rganish jarayonim.",
+  "search": "Qidirish: React, Tailwind, Next.js...",
+  "all": "Hammasi",
+  "read": "O‘qish",
+  "empty": "Hech narsa topilmadi.",
+  "note": "Yaqin orada bu yerga ko‘proq postlar va real loyihalar bilan bog‘liq maqolalar qo‘shaman."
+},
+
+  
+  "about": {
+    "badge": "About",
+    "name": "Karimov Kamron",
+    "heroTitle": "Frontend Developer",
+    "heroText": "Men frontend dasturchiman. Hozirda PDP Academy’da o‘qiyman va yaqin orada bitiraman — oz qoldi. Dasturlashni 2 yildan ortiq vaqt davomida o‘rganib kelayapman va bilim olishda davom etyapman. Boshlang‘ich darajada C++ ham o‘qiganman, bu menga algoritmik fikrlash va mustahkam baza berishga yordam bergan. Hozir esa asosiy yo‘nalishim — web frontend: zamonaviy, responsive va toza interfeyslar yaratish. Kelajakda kuchli kompaniyada ishlash niyatim bor. Google kabi katta kompaniyalarda ishlash — maqsadlarimdan biri. Shu maqsadga yaqinlashish uchun har kuni amaliyot qilib, real loyihalar ustida ishlashni kuchaytirayapman.",
+    "buttons": {
+      "portfolio": "Portfolio",
+      "email": "Email",
+      "telegram": "Telegram"
+    },
+    "placeholder": {
+      "title": "Rasm joyi",
+      "subtitle": "Image coming soon",
+      "desc": "Bu joyga keyinchalik shaxsiy rasm qo‘yiladi."
+    },
+    "stats": {
+      "focus": "Frontend",
+      "learning": "PDP Academy",
+      "goal": "Big Tech"
+    },
+    "portfolioBlock": {
+      "title": "Portfolio",
+      "text": "Hozircha portfolio’da katta real loyihalar yo‘q. Lekin yaqin orada kamida 1 ta to‘liq case study bilan loyiha qo‘shaman. Maqsad — real kompaniya darajasidagi ishlar ko‘rsatish."
+    },
+    "goalBlock": {
+      "title": "Maqsad",
+      "text": "Yaqin orada real kompaniyada junior frontend sifatida ish boshlashni reja qilganman. Kuchli jamoa bilan ishlash, real product va real tajriba orttirish — asosiy maqsadlarimdan."
+    }
+  }
+,
+  
+  "categories": {
+    "title": "Toolbox",
+    "subtitle": "Men ishlatadigan asosiy texnologiyalar va ish uslubim.",
+    "groups": {
+      "ui": {
+        "title": "UI",
+        "desc": "Toza dizayn, layout va responsive yondashuv."
+      },
+      "framework": {
+        "title": "Framework",
+        "desc": "Frontend arxitektura, routing va component tizimi."
+      },
+      "quality": {
+        "title": "Quality",
+        "desc": "Kod sifati, versiya nazorati va optimizatsiya."
+      }
+    },
+    "building": {
+      "title": "Hozir nima qilyapman?",
+      "desc": "Yaqin orada portfolio bo‘limini to‘ldiraman va real loyiha case study qo‘shaman."
+    },
+    "note": "Bu bo‘lim doim yangilanib boradi. Yaqin orada real loyihalar ham qo‘shiladi."
+  },
+  "tech": {
+    "title": "Texnologiyalar",
+    "subtitle": "Frontend ekotizimidagi asosiy texnologiyalar va yo‘nalishlar",
+    "centerTop": "Blog",
+    "centerBottom": "Ko‘rish",
+    "items": {
+      "html": {
+        "title": "HTML",
+        "desc": "Web sahifalarning asosiy strukturasi va semantik belgilash."
+      },
+      "css": {
+        "title": "CSS",
+        "desc": "Layout, responsive dizayn va interfeys styling."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "desc": "Interaktivlik va web logikasi uchun asosiy til."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "desc": "Type xavfsizligi va katta loyihalar uchun mustahkam arxitektura."
+      },
+      "react": {
+        "title": "React",
+        "desc": "Komponent asosidagi zamonaviy UI kutubxonasi."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "desc": "SSR, SSG va production darajadagi React framework."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "desc": "Utility-first yondashuv bilan tez va toza dizayn."
+      },
+      "sass": {
+        "title": "Sass",
+        "desc": "Kengaytirilgan CSS va modul struktura."
+      }
+    }
+  }
+}
