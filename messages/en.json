@@ -53,6 +53,7 @@
   "about": "About",
   "contact": "Contact",
   "connect": "Connect",
+  "category": "Category",
   "rights": "All rights reserved."
 },
 
@@ -157,5 +158,44 @@
         "desc": "Extended CSS with better structure and organization."
       }
     }
+  },
+  "ru": {
+    "title": "ТЕХНОЛОГИИ",
+    "subtitle": "Ключевые frontend технологии и направления.",
+    "explore": "Подробнее",
+    "blog": "Блог",
+    "items": [
+      { "name": "HTML", "desc": "Создание структуры" },
+      { "name": "CSS", "desc": "Стилизация и дизайн" },
+      { "name": "JavaScript", "desc": "Интерактивность" },
+      { "name": "TypeScript", "desc": "Типобезопасность" },
+      { "name": "React", "desc": "UI библиотека" },
+      { "name": "Next.js", "desc": "Fullstack фреймворк" },
+      { "name": "Tailwind", "desc": "Utility-first CSS" },
+      { "name": "Sass", "desc": "Расширенный CSS" }
+    ]
   }
+  ,
+ "social": {
+    "title": "Community",
+    "subtitle": "Useful content and updates — all in one place.",
+    "items": {
+      "telegram": {
+        "title": "Telegram Channel",
+        "desc": "Helpful dev posts, quick tutorials and real project insights.",
+        "cta": "Join channel"
+      },
+      "instagram": {
+        "title": "Instagram Profile",
+        "desc": "Short tips, UI inspiration, code snippets and mini lessons.",
+        "cta": "Open profile"
+      },
+      "github": {
+        "title": "GitHub",
+        "desc": "My public repos and useful code snippets.",
+        "cta": "Open repo"
+      }
+    }
+  }
+
 }

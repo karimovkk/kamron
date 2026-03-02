@@ -52,6 +52,7 @@
   "about": "Men haqimda",
   "contact": "Bog‘lanish",
   "connect": "Bog‘lanish",
+  "category": "Kategoriya",
   "rights": "Barcha huquqlar himoyalangan."
 },
 "blog": {
@@ -158,5 +159,46 @@
         "desc": "Kengaytirilgan CSS va modul struktura."
       }
     }
+  },
+    "uz": {
+    "title": "TEXNOLOGIYALAR",
+    "subtitle": "Frontend uchun asosiy texnologiyalar va yo‘nalishlar.",
+    "explore": "Kashf qilish",
+    "blog": "Blog",
+    "items": [
+      { "name": "HTML", "desc": "Struktura yaratish" },
+      { "name": "CSS", "desc": "Dizayn va stil berish" },
+      { "name": "JavaScript", "desc": "Interaktivlik qo‘shish" },
+      { "name": "TypeScript", "desc": "Tip xavfsizligi" },
+      { "name": "React", "desc": "UI kutubxonasi" },
+      { "name": "Next.js", "desc": "Fullstack framework" },
+      { "name": "Tailwind", "desc": "Utility-first CSS" },
+      { "name": "Sass", "desc": "Kengaytirilgan CSS" }
+    ]
+  },
+  
+  
+  "social": {
+    "title": "Hamjamiyat",
+    "subtitle": "Foydali kontent va yangiliklar — bir joyda.",
+    "items": {
+      "telegram": {
+        "title": "Telegram kanal",
+        "desc": "Dasturchilar uchun foydali postlar, tezkor tutoriallar va real loyiha tajribalari.",
+        "cta": "Kanalga qo‘shilish"
+      },
+      "instagram": {
+        "title": "Instagram profil",
+        "desc": "Qisqa tipslar, UI ilhom, kod snippetlar va mini darslar.",
+        "cta": "Profilni ochish"
+      },
+      "github": {
+        "title": "GitHub",
+        "desc": "Mening ochiq kodlar, real repo’lar va start tip snippetlar.",
+        "cta": "Repo’ni ochish"
+      }
+    }
   }
+
+
 }

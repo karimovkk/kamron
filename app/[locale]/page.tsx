@@ -5,6 +5,7 @@ import LatestPosts from "../components/LatestPosts";
 import Categories from "../components/Categories";
 import Progres from "../components/Progres";
 import Reveal from "./_components/Reveal";
+import CardChannel from "../components/CardChannel";
 
 export default function Page() {
   return (
@@ -19,6 +20,10 @@ export default function Page() {
 
       <Reveal dir="right" delay={0.07}>
         <Categories />
+      </Reveal>
+       
+      <Reveal dir="up" delay={0.1}>
+        <CardChannel />
       </Reveal>
 
       <Reveal dir="up" delay={0.1}>

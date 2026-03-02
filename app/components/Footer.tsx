@@ -61,6 +61,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={withLocale("/category")} className="footer-link">
+                  {t("footer.category")}
+                </Link>
+              </li>
+              <li>
                 <Link href={withLocale("/contact")} className="footer-link">
                   {t("footer.contact")}
                 </Link>
