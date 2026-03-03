@@ -16,7 +16,7 @@ export default function BlogClient({
   const [cat, setCat] = useState<string>("all");
 
   const categories = useMemo(() => {
-    const set = new Set(posts.map((p) => p.category));
+    const set = new Set(posts.map((p) => p.category).filter(Boolean));
     return ["all", ...Array.from(set)];
   }, [posts]);
 
