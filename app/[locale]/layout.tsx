@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import IntroOverlayGate from "./_components/IntroOverlay"
+import IntroOverlayGate from "./_components/IntroOverlayGate";
 
 export default async function LocaleLayout({
   children,
