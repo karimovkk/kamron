@@ -3,7 +3,8 @@
     "home": "Home",
     "blog": "Blog",
     "categories": "Categories",
-    "about": "About"
+    "about": "About",
+    "contact": "Contact"
   },
   "hero": {
   "badge": "Frontend Developer Blog",
@@ -196,6 +197,28 @@
         "cta": "Open repo"
       }
     }
+  },
+  
+  "contact": {
+    "badge": "Contact page",
+    "title1": "Let's build",
+    "title2": "something great",
+    "desc": "If you have a project, collaboration, or job offer, feel free to contact me. Let's turn your idea into a modern and beautiful web product.",
+    "formTitle": "Send a message",
+    "formDesc": "Write your idea and I will respond as soon as possible.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Write your message...",
+    "sendMessage": "Send Message",
+    "replyTime": "Usually replies within 24 hours",
+    "successMessage": "Message sent successfully",
+    "errorMessage": "Failed to send message",
+    "serverError": "Server connection error",
+    "email": "Email",
+    "telegram": "Telegram",
+    "phone": "Phone"
   }
+
 
 }

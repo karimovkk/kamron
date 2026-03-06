@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 const navItems = [
   { href: "/", key: "nav.home" },
   { href: "/blog", key: "nav.blog" },
+   { href: "/about", key: "nav.about" },
   { href: "/category", key: "nav.categories" },
-  { href: "/about", key: "nav.about" }
+   { href: "/contact", key: "nav.contact" }
+ 
 ];
 
 const locales = [
@@ -26,46 +28,32 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
-  const withLocale = (href: string) =>
-    `/${locale}${href === "/" ? "" : href}`;
-
-  const currentPath = useMemo(() => {
+  const cleanPath = () => {
     const p = pathname || "/";
-    const without = p.replace(`/${locale}`, "");
-    return without === "" ? "/" : without;
-  }, [pathname, locale]);
+    const withoutLocale = p.startsWith(`/${locale}`) ? p.slice(locale.length + 1) : p;
+    return withoutLocale === "" ? "/" : withoutLocale;
+  };
 
-  const isActive = (href: string) => currentPath === href;
+  const currentPath = cleanPath();
+
+  const withLocale = (href: string) => `/${locale}${href === "/" ? "" : href}`;
 
   const switchLocaleHref = (nextLocale: string) =>
     `/${nextLocale}${currentPath === "/" ? "" : currentPath}`;
+
+  const isActive = (href: string) => currentPath === href;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 mt-3 sm:mt-4">
         <div className="flex h-14 items-center justify-between rounded-2xl border border-white/10 bg-[#07142A]/40 px-4 sm:px-5 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
-
-          <Link
-            href={withLocale("/")}
-            className="flex items-center gap-2.5"
-            aria-label="karimov.dev home"
-          >
+          <Link href={withLocale("/")} className="flex items-center gap-2.5" aria-label="karimov.dev home">
             <span className="flex items-center font-mono text-sm text-[#38BDF8]">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="16 18 22 12 16 6" />
                 <polyline points="8 6 2 12 8 18" />
               </svg>
             </span>
-
             <span className="text-lg font-bold tracking-tight">
               <span className="text-[#1E3A8A]">karimov</span>
               <span className="text-[#E5E7EB]">.dev</span>
@@ -79,9 +67,7 @@ export default function Navbar() {
                   <Link
                     href={withLocale(item.href)}
                     className={`text-sm font-medium transition-colors hover:text-[#38BDF8] ${
-                      isActive(item.href)
-                        ? "text-[#38BDF8]"
-                        : "text-slate-200/70"
+                      isActive(item.href) ? "text-[#38BDF8]" : "text-slate-200/70"
                     }`}
                   >
                     {t(item.key)}
@@ -93,14 +79,11 @@ export default function Navbar() {
             <div className="relative">
               <button
                 type="button"
-                onClick={() => setLangOpen((v) => !v)}
+                onClick={() => setLangOpen(!langOpen)}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-slate-100/80 backdrop-blur-xl transition hover:bg-white/10 hover:text-slate-100"
               >
                 <span className="text-[#38BDF8]">🌐</span>
-                <span>
-                  {locales.find((l) => l.code === locale)?.label ||
-                    locale.toUpperCase()}
-                </span>
+                <span>{locales.find((l) => l.code === locale)?.label || locale.toUpperCase()}</span>
                 <span className="text-slate-200/60">▾</span>
               </button>
 
@@ -127,7 +110,7 @@ export default function Navbar() {
 
           <button
             className="md:hidden flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-200 transition hover:bg-white/10"
-            onClick={() => setMobileOpen((v) => !v)}
+            onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? "✕" : "☰"}
           </button>
@@ -135,10 +118,7 @@ export default function Navbar() {
 
         {mobileOpen && (
           <>
-            <div
-              className="fixed inset-0 z-40 bg-black/40 md:hidden"
-              onClick={() => setMobileOpen(false)}
-            />
+            <div className="fixed inset-0 z-40 bg-black/40 md:hidden" onClick={() => setMobileOpen(false)} />
 
             <div className="relative z-50 mt-2 rounded-2xl border border-white/10 bg-[#07142A]/90 backdrop-blur-xl md:hidden overflow-hidden">
               <ul className="flex flex-col px-4 py-4">
@@ -148,9 +128,7 @@ export default function Navbar() {
                       href={withLocale(item.href)}
                       onClick={() => setMobileOpen(false)}
                       className={`block rounded-xl px-3 py-3 text-sm font-medium transition hover:bg-white/5 hover:text-[#38BDF8] ${
-                        isActive(item.href)
-                          ? "text-[#38BDF8]"
-                          : "text-slate-200/70"
+                        isActive(item.href) ? "text-[#38BDF8]" : "text-slate-200/70"
                       }`}
                     >
                       {t(item.key)}

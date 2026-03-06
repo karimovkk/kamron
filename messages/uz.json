@@ -3,7 +3,8 @@
     "home": "Bosh sahifa",
     "blog": "Blog",
     "categories": "Kategoriya",
-    "about": "Men haqimda"
+    "about": "Men haqimda",
+    "contact":"Boglanish"
   },
   "hero": {
   "badge": "Frontend Developer Blog",
@@ -198,7 +199,30 @@
         "cta": "Repo’ni ochish"
       }
     }
+  },
+  
+  
+ "contact": {
+    "badge": "Bog‘lanish",
+    "title1": "Keling",
+    "title2": "birga ajoyib loyiha qilaylik",
+    "desc": "Agar loyiha, hamkorlik yoki ish taklifi bo‘lsa, menga yozing. G‘oyangizni birga zamonaviy va chiroyli web mahsulotga aylantiramiz.",
+    "formTitle": "Xabar yuborish",
+    "formDesc": "G‘oyangizni yozing, men tez orada javob beraman.",
+    "namePlaceholder": "Ismingiz",
+    "emailPlaceholder": "Emailingiz",
+    "subjectPlaceholder": "Mavzu",
+    "messagePlaceholder": "Xabaringizni yozing...",
+    "sendMessage": "Xabar yuborish",
+    "replyTime": "Odatda 24 soat ichida javob beraman",
+    "successMessage": "Xabar muvaffaqiyatli yuborildi",
+    "errorMessage": "Xabar yuborishda xatolik yuz berdi",
+    "serverError": "Server bilan ulanishda xatolik",
+    "email": "Email",
+    "telegram": "Telegram",
+    "phone": "Telefon"
   }
-
-
 }
+
+
+
