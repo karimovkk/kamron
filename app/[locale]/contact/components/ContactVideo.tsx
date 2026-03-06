@@ -13,7 +13,7 @@ export default function ContactVideo() {
           playsInline
           className="block aspect-video w-full object-cover"
         >
-         <source src="/contact-hero.mp4" type="video/mp4" />
+         <source src="/contact-video.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
