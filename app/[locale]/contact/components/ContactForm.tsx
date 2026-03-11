@@ -20,35 +20,44 @@ export default function ContactForm() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault()
 
-    try {
-      const res = await fetch(process.env.NEXT_PUBLIC_CONTACT_API_URL!, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        },
-        body: JSON.stringify(form)
-      });
+  if (!process.env.NEXT_PUBLIC_CONTACT_API_URL) {
+    toast.error("API URL topilmadi")
+    return
+  }
 
-      if (res.ok) {
-        toast.success(t("successMessage"));
+  try {
+    const res = await fetch(process.env.NEXT_PUBLIC_CONTACT_API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(form)
+    })
 
-        setForm({
-          name: "",
-          email: "",
-          subject: "",
-          message: ""
-        });
-      } else {
-        toast.error(t("errorMessage"));
-      }
-    } catch {
-      toast.error(t("serverError"));
+    const data = await res.text()
+    console.log("status:", res.status)
+    console.log("response:", data)
+
+    if (res.ok) {
+      toast.success(t("successMessage"))
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      })
+    } else {
+      toast.error(t("errorMessage"))
     }
-  };
+  } catch (error) {
+    console.log(error)
+    toast.error(t("serverError"))
+  }
+}
 
   return (
     <form

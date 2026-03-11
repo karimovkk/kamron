@@ -1,30 +1,30 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
-import type { Post } from "./GetData";
+import Link from "next/link"
+import { useTranslations } from "next-intl"
+import { useMemo, useState } from "react"
+import type { Post } from "./GetData"
 
 export default function BlogClient({
   posts,
   locale
 }: {
-  posts: Post[];
-  locale: string;
+  posts: Post[]
+  locale: string
 }) {
-  const t = useTranslations();
-  const [cat, setCat] = useState<string>("all");
+  const t = useTranslations()
+  const [cat, setCat] = useState<string>("all")
 
   const categories = useMemo(() => {
-    const set = new Set(posts.map((p) => p.category).filter(Boolean));
-    return ["all", ...Array.from(set)];
-  }, [posts]);
+    const set = new Set(posts.map((p) => p.category).filter(Boolean))
+    return ["all", ...Array.from(set)]
+  }, [posts])
 
   const filtered = useMemo(() => {
-    return posts.filter((p) => (cat === "all" ? true : p.category === cat));
-  }, [cat, posts]);
+    return posts.filter((p) => (cat === "all" ? true : p.category === cat))
+  }, [cat, posts])
 
-  const withLocale = (href: string) => `/${locale}${href}`;
+  const withLocale = (href: string) => `/${locale}${href}`
 
   return (
     <main className="relative min-h-screen pt-32 pb-24">
@@ -61,7 +61,7 @@ export default function BlogClient({
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
           {filtered.map((p) => {
-            const description = p.desc ?? p.excerpt ?? "";
+            const description = p.desc ?? p.excerpt ?? ""
             return (
               <Link
                 key={p.id ?? p.slug}
@@ -90,7 +90,7 @@ export default function BlogClient({
                   <span className="transition group-hover:translate-x-1">→</span>
                 </div>
               </Link>
-            );
+            )
           })}
         </section>
 
@@ -105,5 +105,5 @@ export default function BlogClient({
         </div>
       </div>
     </main>
-  );
+  )
 }

@@ -15,7 +15,19 @@ export default function Footer() {
       <div className="relative mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-14 md:grid-cols-3">
           <div>
-            <h3 className="text-xl font-bold text-white">karimov.dev</h3>
+           <Link href={withLocale("/")} className="flex items-center gap-2.5" aria-label="karimov.dev home">
+            <span className="flex items-center font-mono text-sm text-[#38BDF8]">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </span>
+            <span className="text-lg font-bold tracking-tight">
+              <span className="text-[#1E3A8A]">karimov</span>
+              <span className="text-[#E5E7EB]">.dev</span>
+            </span>
+          </Link>
+
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               {t("footer.desc")}
             </p>
