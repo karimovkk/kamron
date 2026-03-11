@@ -10,25 +10,27 @@ import CardChannel from "../components/CardChannel";
 export default function Page() {
   return (
     <div>
-      <Reveal dir="up">
+      {/* <Reveal dir="up"> */}
         <Hero />
-      </Reveal>
+      {/* </Reveal> */}
 
-      <Reveal dir="left" delay={0.05}>
+      {/* <Reveal dir="left" delay={0.05}> */}
         <LatestPosts />
-      </Reveal>
+      {/* </Reveal> */}
 
-      <Reveal dir="right" delay={0.07}>
+      {/* <Reveal dir="right" delay={0.07}> */}
         <Categories />
-      </Reveal>
+      {/* </Reveal> */}
        
-      <Reveal dir="up" delay={0.1}>
-        <CardChannel />
-      </Reveal>
-
-      <Reveal dir="up" delay={0.1}>
+     
+      {/* <Reveal dir="up" delay={0.1}> */}
         <Progres />
-      </Reveal>
+      {/* </Reveal> */}
+
+       {/* <Reveal dir="up" delay={0.2}> */}
+        <CardChannel />
+      {/* </Reveal> */}
+
     </div>
   );
 }
